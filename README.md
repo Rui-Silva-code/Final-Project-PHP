@@ -1,6 +1,6 @@
 # CRUD-AUTHENTICATION – PHP & MySQL
 
-## Portuguese version - [Português](README_PT.md)
+## Portuguese [README](README_PT.md)
 
 ## Overview
 Final project developed as part of a Web Development course, with the goal of demonstrating practical skills in back-end development using PHP and MySQL, as well as integration with the front-end.
