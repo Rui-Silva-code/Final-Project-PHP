@@ -65,12 +65,19 @@ O projeto inclui **autenticação de utilizadores**, **operações CRUD** e uma 
 ---
 
 Estrutura do projeto (resumo)
-
-   /assets        -> CSS, JavaScript e imagens
-   /sql           -> Scripts SQL e dados de exemplo
-   /app (ou /src) -> Lógica da aplicação em PHP
-   config.example.php
-   index.php
+   /css/                -> Estilo
+   /imagens/            -> Imagens
+   casopratico.sql      -> Esquema Base de Dados
+   basedados.php        -> Ligação Base de Dados
+   index.php            -> Página Inicial
+   login.php            -> Página Login
+   processa_login.php   -> Processamento Login
+   pagina_de_registro.html
+   processa_registro.php
+   perfil_utilizador.php
+   perfil_admin.php
+   editar_*.php         -> Operações para Alterações
+   excluir_*.php        -> Operações para Apagar
 
 ---
 
