@@ -1,66 +1,62 @@
 # Final Project - PHP
 
 Descrição curta
-Projeto final do curso que demonstra conhecimentos em PHP e MySQL, com funcionalidades básicas de CRUD e autenticação simples. Serve como portfólio para mostrar competências em backend com PHP e integração com base de dados.
+Projeto final do curso que demonstra conhecimentos em PHP e MySQL: autenticação básica, operações CRUD e integração entre front-end (HTML/CSS/Bootstrap) e back-end (PHP).
 
-Estado: Concluído / Demonstração académica
+Estado: Projeto académico / demonstração
 
 Tecnologias
 - PHP 7.4+
 - MySQL / MariaDB
 - HTML5, CSS3, JavaScript (vanilla)
-- (Opcional) Bootstrap para estilos
-
-Demo / Screenshots
-- Adiciona aqui screenshots na pasta /assets ou um link se fizeres deploy.
+- (Opcional) Bootstrap 4/5
 
 Requisitos
-- PHP 7.4 ou superior
-- MySQL 5.7 ou superior
-- XAMPP / MAMP / LAMP ou servidor PHP local
+- PHP 7.4+ (extensão PDO recomendada)
+- MySQL 5.7+ (ou MariaDB)
+- XAMPP / MAMP / LAMP / Docker
 
 Instalação e execução local
 1. Clona o repositório:
    git clone https://github.com/Rui-Silva-code/Final-Project-PHP.git
-2. Copia o ficheiro de configuração de exemplo e atualiza as credenciais:
+2. Copia o ficheiro de configuração de exemplo e edita:
    cp config.example.php config.php
-   (edita config.php com as tuas credenciais locais)
-3. Importa a base de dados de exemplo (se existir):
+   (preenche as credenciais locais)
+3. Importa o esquema de exemplo:
    mysql -u teu_user -p nome_da_bd < sql/example_db.sql
-4. Corre o servidor local (ou usa XAMPP):
+4. Corre o servidor local:
    php -S localhost:8000
    Abre http://localhost:8000
 
 Funcionalidades implementadas
-- Autenticação básica (login e logout)
-- CRUD para a entidade principal (por exemplo, produtos ou posts)
-- Validação simples no front-end e back-end
-- Layout responsivo com Bootstrap (quando aplicável)
+- Login / logout simples (sessões PHP)
+- CRUD de [entidade] (ex.: produtos, posts)
+- Validação básica no front-end (JS) e back-end (PHP)
+- Layout responsivo com Bootstrap
 
 Limitações conhecidas
-- Senhas podem não usar hashing seguro — melhorar com password_hash (bcrypt)
-- Sem recuperação de password/rotas de admin avançadas
+- Sem hashing avançado de passwords em versões antigas — recomenda-se password_hash()
+- Sem recuperação de password / sem envio de e-mail
 - Sem testes automatizados
 
-Estrutura de ficheiros (resumo)
-- /index.php (ponto de entrada)
-- /config.example.php (modelo de configuração)
-- /sql/ (dump/schema de exemplo)
+Segurança / boas práticas
+- Não comitar config.php com credenciais. Usa config.example.php.
+- Se já comitaste credenciais, rotaciona as passwords e limpa o histórico.
+
+Estrutura (resumo)
+- index.php
+- config.example.php
+- /sql/example_db.sql
 - /assets/ (CSS, JS, imagens)
 - /app/ ou /src/ (lógica PHP)
 
-O que aprendi
-- Integração PHP + MySQL com prepared statements
-- Conceitos básicos de autenticação e gestão de sessões
-- Organização de ficheiros para um projeto web simples
-
 Próximos passos sugeridos
-- Implementar hashing de passwords (password_hash)
-- Remover credenciais do repositório e usar variáveis de ambiente
-- Adicionar testes e CI
+- Implementar password_hash + prepared statements (se não houver)
+- Mover credenciais para variáveis de ambiente
+- Adicionar CI e testes básicos
 
 Licença
-Este projeto está licenciado sob a MIT License — vê o ficheiro LICENSE.
+MIT — ver LICENSE
 
 Contacto
 Rui Silva — https://github.com/Rui-Silva-code
