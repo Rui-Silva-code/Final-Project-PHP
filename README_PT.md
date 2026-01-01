@@ -1,4 +1,4 @@
-# Final Project – PHP & MySQL
+# CRUD-AUTHENTICATION – PHP & MySQL
 
 ## Visão geral
 Projeto final desenvolvido no âmbito do curso de Web Development, com o objetivo de demonstrar competências práticas em desenvolvimento back-end com **PHP** e **MySQL**, bem como a integração com o front-end.
